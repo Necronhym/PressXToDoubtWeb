@@ -5,7 +5,9 @@
 	</head>
 
 	<body>
-		<h1 style="text-align: center">Press X to doubt</h1>
+		<br>
+		<br>
+		<h1 style="text-align: center">Press <div id="x">X</div> to doubt</h1>
 		<script>
 			document.addEventListener('keydown', function()
 					{
@@ -16,7 +18,7 @@
 								A.play();
 							}
 					});
-			document.getElementsByTagName('h1')[0].addEventListener('click', function()
+			document.getElementById('x').addEventListener('click', function()
 					{
 						var A = new Audio();
 						A.src = 'D.mp3';
